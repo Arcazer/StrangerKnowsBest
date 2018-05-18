@@ -1,0 +1,22 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+header{
+  width: 100%;
+  height: 15%;
+  background-color: #FF4081;
+}
+
+main {
+  width: 100%;
+  height: 70;
+  background-color: #F50057;
+}
+
+footer {
+  width: 100%;
+  height: 15%;
+  background-color: #C51162;
+}
