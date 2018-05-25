@@ -4,11 +4,7 @@ const bodyParser = require('body-parser');
 
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
-app.use(express.static(__dirname));
-app.get('/', function(req, res){
-    res.sendFile( __dirname + "/" + "index.html" );
-    console.log(__dirname);
-})
+app.use("/", express.static(__dirname, {'index':'index.html'}));
 
 app.post('/senddata', urlencodedParser, function(req,res){
     response = {
